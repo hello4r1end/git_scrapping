@@ -26,21 +26,23 @@ This project is a GitHub repository scraper that allows users to search for repo
 Install the required Python packages:
 bash
 Copy code
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 Usage
 Command Line Interface
 You can run the scraper directly from the command line with the following command:
 
 bash
 Copy code
-python github_scraper.py --description "port scanning" --sort stars --order desc --per_page 10 --max_pages 10 --language python --created_after 2020-01-01 --output output.xlsx
-Web Frontend
+**python github_scraper.py --description "port scanning" --sort stars --order desc --per_page 10 --max_pages 10 --language python --created_after 2020-01-01 --output output.xlsx
+**Web Frontend
 Run the Flask app:
 
 bash
 Copy code
-python app.py
-Open your web browser and navigate to http://127.0.0.1:5000.
+
+**python app.py
+
+**Open your web browser and navigate to http://127.0.0.1:5000.
 
 Fill in the search criteria and submit the form to start scraping. The results will be saved to an Excel file and a download link will be provided.
 
