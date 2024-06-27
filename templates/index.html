@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Repository Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>GitHub Repository Scraper</h1>
+    <form method="POST">
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br><br>
+
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="stars">Stars</option>
+            <option value="forks">Forks</option>
+            <option value="updated">Updated</option>
+        </select><br><br>
+
+        <label for="order">Order:</label>
+        <select id="order" name="order">
+            <option value="desc">Descending</option>
+            <option value="asc">Ascending</option>
+        </select><br><br>
+
+        <label for="per_page">Results per page:</label>
+        <input type="number" id="per_page" name="per_page" value="10" required><br><br>
+
+        <label for="max_pages">Max pages:</label>
+        <input type="number" id="max_pages" name="max_pages" value="10" required><br><br>
+
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="language"><br><br>
+
+        <label for="created_after">Created after (YYYY-MM-DD):</label>
+        <input type="date" id="created_after" name="created_after"><br><br>
+
+        <label for="updated_after">Updated after (YYYY-MM-DD):</label>
+        <input type="date" id="updated_after" name="updated_after"><br><br>
+
+        <button type="submit">Scrape</button>
+    </form>
+</body>
+</html>
